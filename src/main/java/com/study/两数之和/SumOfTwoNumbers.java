@@ -41,10 +41,17 @@ public class SumOfTwoNumbers {
       *
       * 复杂度分析
       *
-      * 时间复杂度：O(N)O(N)，其中 NN 是数组中的元素数量。对于每一个元素 x，我们可以 O(1)O(1) 地寻找 target - x。
+      * 时间复杂度：O(N)，其中 N 是数组中的元素数量。对于每一个元素 x，我们可以 O(1) 地寻找 target - x。
       *
-      * 空间复杂度：O(N)O(N)，其中 NN 是数组中的元素数量。主要为哈希表的开销。
+      * 空间复杂度：O(N)，其中 N 是数组中的元素数量。主要为哈希表的开销。
       * */
+
+     public static void main(String[] args) {
+         int[] nums = new int[]{-2,8,11,15,};
+         int target = 9;
+         System.out.println(Arrays.toString(doMain(nums,target)));
+
+     }
 
      public static int[] doMain(int[] nums,int target){
          int length = nums.length;
@@ -60,10 +67,5 @@ public class SumOfTwoNumbers {
         return new int[0];
      }
 
-    public static void main(String[] args) {
-        int[] nums = new int[]{-2,8,11,15,};
-        int target = 9;
-        System.out.println(Arrays.toString(doMain(nums,target)));
 
-    }
 }
